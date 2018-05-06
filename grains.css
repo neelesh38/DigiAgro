@@ -1,0 +1,103 @@
+
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+#text{
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:500px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border:2px solid #EEEEEE;
+    //box-shadow: 2px 3px 4px 5px #EEEEEE;
+    background-color: black; !important
+    color:black !important;
+}
+
+.box{
+
+    float: left;
+}
+.desc{
+    position: relative;
+    top:25px;
+    width:100px;
+    float:left;
+}
+.desc input{
+     width:50px;
+}
+.desc button{
+    position: relative;
+    top:10px;
+}
+
+.hr1{
+    border-left:    2px solid #EEEEEE;
+    height:         120px;
+    float: left;
+    margin:0px 60px;
+}
+
+
+.hr2{
+    clear: both;
+    border-top:  2px solid #EEEEEE;
+    height:   3px;
+
+    margin:30px 0px;
+    width:100%;
+}
+.items{
+    width:150px;
+    height: 120px;
+    margin: 0px 40px 20px 0px;
+    float: left;
+
+}
+
+#grain_text{
+    margin: 20px 0px 20px 0px;
+}
+#nav
+{
+  width:920px;
+margin:0 auto;
+}
+
+.sign_in{
+
+    padding: 12px 20px 0px 0px;
+
+    float: right;
+}
+
+.log_text:hover{
+    cursor: pointer;
+
+}
+
+#agro_text{
+   position: relative;
+    top:8px;
+    font-weight: bold;
+}
+.shopping:hover{
+
+    color:green;
+}
