@@ -1,20 +1,7 @@
 <?php
-$error='';
 session_start();
-if(array_key_exists("submit",$_POST))
-{
-
-    $link=mysqli_connect("localhost","root","","login_agro");
-
-    if(mysqli_connect_error()){
-        die( "there is connection error");
-        }
-
-$email=$_POST['username'];
-$pass=$_POST['password'];
-$user=$_POST['user'];
-echo $email;
-}
+ $link=mysqli_connect("localhost","root","","login_agro");
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,79 +17,27 @@ echo $email;
 <script src="js/jquery-3.3.1.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <script src="js/bootstrap.js"></script>
-<script>
-$(document).ready(function(){
-  $('#exampleModal').modal('show');
-});
-
-$(document).ready(function(){
-  $('#sign1').click(function(){
-    var user = $('#user').val();
-    var username = $('#username').val();
-    var password = $('#password').val();
-    if(user !='' && username!='' && password !='')
-    {
-         $.ajax({
-           url:"action.php",
-           method:"POST",
-           data:{user:user,username:username,password:password},
-           success:function(data){
-             
-           }
-
-         })
-    }
-    else {
-      alert('both field reqired');
-
-    }
-
-  });
-})
-</script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/ie.css">
 <![endif]-->
 </head>
 <body>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Register</h4>
-      </div>
-      <div class="modal-body">
-        <form method="post">
-          <div class="form-group">
-            <label for="recipient-name" class="control-label">Username:</label>
-            <input type="text" class="form-control" id="user" name="user">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="control-label">Email:</label>
-            <input type="email" class="form-control" id="username" name="username">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="control-label">Password:</label>
-            <input type="password" class="form-control" id="password" name="password">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary sign" id="sign1" value="1" name="submit">Register!</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-        </div>
-    </div>
-  </div>
-</div>
+  
 <div class="main-bg">
   <header>
     <div class="inner">
       <h1 class="logo"><a href="index.php">AgroStore - Agriculture company</a></h1>
+      <a class="log_text">Welcome&nbsp; <?php
+    $id=$_SESSION['id'];
+     $query="SELECT * FROM register_agro WHERE 
+     id='$id'";
+        
+$ans=mysqli_query($link,$query);
+        $row = mysqli_fetch_array($ans);
+    echo ucfirst($row['name']);
+    ?></a>
       <a href="cart.php"><img src="pics/cart1.png" align="right" style="width:50px;height:50px"></a>
-      <a href="login.php"><img src="pics/home.png" align="right" style="width:50px;height:50px"></a>
       <nav>
         <ul class="sf-menu">
           <li class="current"><a href="index.php">home</a></li>

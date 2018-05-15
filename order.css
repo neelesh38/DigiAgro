@@ -1,0 +1,52 @@
+
+      body{
+              background: url(images/slide-1.jpg)  no-repeat center center fixed;
+              background-size: cover;
+              -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+          color:white !important;
+              
+          }
+          .container{
+              
+              margin-top: 30px;
+              width:400px ;
+              
+          }
+input,textarea{
+    width:600px !important;
+}
+          #bold{
+              font-weight: bold;
+          }
+          #user{
+              margin-bottom: 20px;
+          }
+          .username{
+              margin-bottom: 20px;
+          }
+           .password{
+              margin-bottom: 20px;
+          }
+          #check{
+              margin: 0px auto;
+          }
+          #stay{
+              margin-left: 10px;
+          }
+          .sign{
+              margin: 15px 0px;
+          }
+          .link{
+              color:white;
+          }
+          .loged_in{
+              display: none;
+          }
+
+
+.home
+{
+    margin:20px 0px 0px 20px;
+}

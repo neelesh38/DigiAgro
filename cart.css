@@ -1,0 +1,64 @@
+ body{
+              background: url(images/slide-1.jpg);
+              background-size: cover;
+              -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+
+          }
+.head{
+
+    margin-top: 30px;
+    height:1000px !important;
+    border-radius:25px;
+    background-color: white;
+}
+#cart{
+    margin-left: 20px;
+}
+.name{
+    font-weight: bold;
+    width:100px;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.info_head{
+    clear:both;
+    margin-bottom: 5px;
+}
+.names
+{
+    clear: both;
+    margin-left: 40px;
+    width:800px;
+    height:700px;
+}
+.info
+{
+    width:100px;
+    float:left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 30px;
+
+
+}
+.sum
+{
+    clear: both;
+    position: relative;
+    left:400px;
+}
+.butt{
+    margin: 20px 0px;
+}
+.pic{
+    width:50px;
+    height:50px;
+}
+
+.home
+{
+    margin:20px 0px 0px 20px;
+}

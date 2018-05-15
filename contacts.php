@@ -69,7 +69,8 @@
                   <label class="message"> <span>Message:</span>
                     <textarea></textarea>
                   </label>
-                  <div class="btns"> <a class="button"></a> <a class="button">Send</a> </div>
+                  <div class="btns"> <button class="btn btn-primary sign" id="order" value="1" 
+            type="submit" >Send</button></div>
                 </fieldset>
               </form>
             </article>
@@ -122,5 +123,19 @@
     </div>
   </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  
+    <script>
+        $("#order").click(function(){  
+            alert("Your Mail has been send");
+            //header("Location:agro_web.php");
+           //window.location.href="agro_web.php";
+           
+        });
+    
+    </script>
 </body>
 </html>

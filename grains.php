@@ -66,7 +66,6 @@ $ans=mysqli_query($link1,$query);
     <div class="inner">
       <h1 class="logo"><a href="index.php">AgroPlus - Agriculture company</a></h1>
       <a href="cart.php"><img src="pics/cart1.png" align="right" style="width:50px;height:50px"></a>
-      <a href="login.php"><img src="pics/home.png" align="right" style="width:50px;height:50px"></a>
       <nav>
         <ul class="sf-menu">
           <li><a href="index.php">home</a></li>
